@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>Feature.Sugcon</RootNamespace>
+    <AssemblyName>Feature.Sugcon</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
+    <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="14.0.27" />
+    <PackageReference Include="Sitecore.Commerce.XA.Feature.Emails" Version="4.0.120" />
+    <PackageReference Include="Sitecore.Commerce.XA.Foundation.Catalog" Version="4.0.120" />
+    <PackageReference Include="Sitecore.Framework.Rules" Version="3.3.0" />
+  </ItemGroup>
+<!-- Uncomment as needed; f.ex. if Sitecore package references not defined on solution scope - see .\build\props\Build.PackageReferences.props
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Kernel" Version="[9.3.0]">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Sitecore.Mvc" Version="[9.3.0]">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+-->  
+</Project>
