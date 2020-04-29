@@ -28,7 +28,7 @@ namespace Feature.Sugcon.Repositories
         protected override IEnumerable<ID> GetProductsItemIdList()
         {
             CustomGetRecommendedProductsArgs productsPipelineArgs = this.GetRecommendedProductsPipelineArgs();
-            CorePipeline.Run("commerce.getRecommendedProductsCustom", productsPipelineArgs);
+            CorePipeline.Run("commerce.getRecommendedProducts", productsPipelineArgs);
             return productsPipelineArgs.RecommendedProductsIdList;
         }
 
